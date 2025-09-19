@@ -20,6 +20,15 @@ function clearDisplay() {
     display.value = "";
 }
 
+function valueDot() {
+    const parts = currentInput.split(/[\+\-\*\/]/);
+    const lastPart = parts[parts.length - 1];
+    if (!lastPart.includes(".")) {
+        currentInput += ".";
+        printOutput();
+    }
+}
+
 function calculateSqrt() {
     if (display.value === "") return;
         const result = Math.sqrt((display.value));
@@ -85,5 +94,6 @@ function calculate() {
     display.value = result;
     
 }
+
 
 
