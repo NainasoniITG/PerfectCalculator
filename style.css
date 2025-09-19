@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column;
     font-family: Montserrat;
     justify-content: center;
+    margin-top: 50px;
     background: rgba(0, 0, 0, 0.897);
 }
 
@@ -100,7 +100,6 @@ button:after {
 #calculator {
     padding: 20px;
     border: none;
-    width: 26%;
     margin: auto;
     outline: none;
     cursor: pointer;
