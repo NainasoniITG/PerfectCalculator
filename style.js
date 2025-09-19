@@ -21,10 +21,10 @@ function clearDisplay() {
 }
 
 function valueDot() {
-    const parts = currentInput.split(/[\+\-\*\/]/);
+    const parts = display.value.split(/[\+\-\*\/]/);
     const lastPart = parts[parts.length - 1];
     if (!lastPart.includes(".")) {
-        currentInput += ".";
+        display.value += ".";
         printOutput();
     }
 }
@@ -94,6 +94,7 @@ function calculate() {
     display.value = result;
     
 }
+
 
 
 
